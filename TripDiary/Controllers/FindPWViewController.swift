@@ -1,13 +1,13 @@
 //
-//  JoinViewController.swift
+//  FindPWViewController.swift
 //  TripDiary
 //
-//  Created by 김민순 on 2021/01/09.
+//  Created by 김민순 on 2021/01/11.
 //
 
 import UIKit
 
-class JoinViewController: UIViewController {
+class FindPWViewController: UIViewController {
     @IBOutlet weak var goButton: UIButton!
     
     override func viewDidLoad() {
@@ -42,4 +42,3 @@ class JoinViewController: UIViewController {
     */
 
 }
-
