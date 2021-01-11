@@ -35,17 +35,17 @@ class MainViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
-        print("Login Button Pressed")
-        let loginVC = self.storyboard?.instantiateViewController(identifier: "Login") as! LoginViewController
-        self.navigationController?.pushViewController(loginVC, animated: true)
-    }
-    
-    @IBAction func joinButtonPressed(_ sender: UIButton) {
-        print("Join Button Pressed")
-        let joinVC = self.storyboard?.instantiateViewController(identifier: "Join") as! JoinViewController
-        self.navigationController?.pushViewController(joinVC, animated: true)
-    }
+//    @IBAction func loginButtonPressed(_ sender: UIButton) {
+//        print("Login Button Pressed")
+//        let loginVC = self.storyboard?.instantiateViewController(identifier: "Login") as! LoginViewController
+//        self.navigationController?.pushViewController(loginVC, animated: true)
+//    }
+//    
+//    @IBAction func joinButtonPressed(_ sender: UIButton) {
+//        print("Join Button Pressed")
+//        let joinVC = self.storyboard?.instantiateViewController(identifier: "Join") as! JoinViewController
+//        self.navigationController?.pushViewController(joinVC, animated: true)
+//    }
     
 }
 

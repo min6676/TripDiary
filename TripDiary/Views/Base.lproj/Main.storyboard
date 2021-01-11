@@ -47,7 +47,7 @@
                                             <color key="titleColor" red="0.25490196078431371" green="0.74117647058823533" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Glc-eU-H95"/>
+                                            <segue destination="N03-5t-2On" kind="show" id="6eX-Pf-KD1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-ow-EkN">
@@ -62,7 +62,7 @@
                                             <color key="titleColor" red="0.25490196079999999" green="0.74117647060000003" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="joinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LaT-Jq-7rr"/>
+                                            <segue destination="A94-8n-nFE" kind="show" id="3ln-dN-Ux6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -111,7 +111,7 @@
                     <navigationItem key="navigationItem" id="3fV-tt-bwc"/>
                     <connections>
                         <outlet property="joinButton" destination="dsp-ow-EkN" id="R40-MY-6Az"/>
-                        <outlet property="loginButton" destination="drA-uf-PNj" id="BMj-sT-Hko"/>
+                        <outlet property="loginButton" destination="drA-uf-PNj" id="OwU-FZ-Fy0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="k7v-RT-3PH" userLabel="Text Field View">
-                                <rect key="frame" x="30" y="234" width="330" height="180"/>
+                                <rect key="frame" x="30" y="278" width="330" height="180"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-gv-VcF" customClass="HSUnderLineTextField" customModule="TripDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="40"/>
@@ -201,7 +201,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei3-GB-Gta">
-                                <rect key="frame" x="30" y="434" width="330" height="48"/>
+                                <rect key="frame" x="30" y="478" width="330" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="0t1-4s-3N1"/>
@@ -226,6 +226,7 @@
                             <constraint firstItem="k7v-RT-3PH" firstAttribute="leading" secondItem="6Oq-sE-EsK" secondAttribute="leading" constant="30" id="rJM-fL-y5t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3tc-ix-CL7"/>
                     <connections>
                         <outlet property="goButton" destination="Ei3-GB-Gta" id="fFx-2P-izT"/>
                     </connections>
@@ -243,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IM1-Fa-0z9" userLabel="Text Field View">
-                                <rect key="frame" x="30" y="234" width="330" height="159"/>
+                                <rect key="frame" x="30" y="278" width="330" height="159"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-JO-3Dh" customClass="HSUnderLineTextField" customModule="TripDiary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="40"/>
@@ -304,7 +305,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="findPWButtonPressed:" destination="N03-5t-2On" eventType="touchUpInside" id="bgc-LH-gLz"/>
+                                                    <segue destination="MFT-jn-t8B" kind="show" id="ggQ-vv-e6m"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -316,7 +317,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLm-4Z-DvG">
-                                <rect key="frame" x="30" y="434" width="330" height="48"/>
+                                <rect key="frame" x="30" y="478" width="330" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Om2-B9-aC5"/>
@@ -360,7 +361,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ey1-kO-caS" customClass="HSUnderLineTextField" customModule="TripDiary" customModuleProvider="target">
-                                <rect key="frame" x="30" y="234" width="330" height="40"/>
+                                <rect key="frame" x="30" y="278" width="330" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K6a-ZQ-5RL"/>
                                 </constraints>
@@ -383,7 +384,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvX-wc-rkb">
-                                <rect key="frame" x="30" y="434" width="330" height="48"/>
+                                <rect key="frame" x="30" y="478" width="330" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="AJG-UE-rbh"/>
@@ -409,6 +410,7 @@
                             <constraint firstItem="jvX-wc-rkb" firstAttribute="top" secondItem="O8z-QH-rWz" secondAttribute="top" constant="390" id="fkw-yF-Bpm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vCm-gd-vOz"/>
                     <connections>
                         <outlet property="goButton" destination="jvX-wc-rkb" id="G8J-XV-o3P"/>
                     </connections>

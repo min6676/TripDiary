@@ -32,11 +32,11 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: fontColor, NSAttributedString.Key.font: UIFont(name: "NanumSquareOTF_acB", size: 26)!]
     }
     
-    @IBAction func findPWButtonPressed(_ sender: UIButton) {
-        print("findPW Button Pressed")
-        let findPWVC = self.storyboard?.instantiateViewController(identifier: "FindPW") as! FindPWViewController
-        self.navigationController?.pushViewController(findPWVC, animated: true)
-    }
+//    @IBAction func findPWButtonPressed(_ sender: UIButton) {
+//        print("findPW Button Pressed")
+//        let findPWVC = self.storyboard?.instantiateViewController(identifier: "FindPW") as! FindPWViewController
+//        self.navigationController?.pushViewController(findPWVC, animated: true)
+//    }
     
 }
 
