@@ -8,37 +8,48 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+    @IBOutlet weak var userIdTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var goButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        setUI()
-        
-    }
-    
-    func setUI() {
+        userIdTextField.delegate = self
+        passwordTextField.delegate = self
         
         goButton.layer.cornerRadius = 14
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        let fontColor = #colorLiteral(red: 0.9764705882, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-        self.navigationItem.title = "로그인"
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: fontColor, NSAttributedString.Key.font: UIFont(name: "NanumSquareOTF_acB", size: 26)!]
+
+        title = "로그인"
+
+    }
+
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: K.loginSegue, sender: self)
     }
     
-//    @IBAction func findPWButtonPressed(_ sender: UIButton) {
-//        print("findPW Button Pressed")
-//        let findPWVC = self.storyboard?.instantiateViewController(identifier: "FindPW") as! FindPWViewController
-//        self.navigationController?.pushViewController(findPWVC, animated: true)
-//    }
-    
 }
+
+//MARK: - UITextFieldDelegate
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userIdTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if userIdTextField.text != "" {
+            print(userIdTextField.text!)
+            return true
+        } else {
+            print("Type ID")
+            return false
+        }
+    }
+}
+
+//MARK: - UnderLineTextField
 
 class HSUnderLineTextField: UITextField , UITextFieldDelegate {
     

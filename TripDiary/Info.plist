@@ -6,6 +6,7 @@
 	<array>
 		<string>NanumSquareOTF_acB.otf</string>
 		<string>NanumSquareOTF_acR.otf</string>
+		<string>NanumSquareOTF_acEB.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

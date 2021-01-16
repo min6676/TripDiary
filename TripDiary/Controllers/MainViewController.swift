@@ -14,15 +14,20 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        loginButton.layer.cornerRadius = 14
+        joinButton.layer.cornerRadius = 14
         setUI()
     }
     
     func setUI() {
-        loginButton.layer.cornerRadius = 14
-        joinButton.layer.cornerRadius = 14
         
+        let fontColor = #colorLiteral(red: 0.9764705882, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: fontColor, NSAttributedString.Key.font: UIFont(name: "NanumSquareOTF_acB", size: 26)!]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,18 +39,6 @@ class MainViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-    
-//    @IBAction func loginButtonPressed(_ sender: UIButton) {
-//        print("Login Button Pressed")
-//        let loginVC = self.storyboard?.instantiateViewController(identifier: "Login") as! LoginViewController
-//        self.navigationController?.pushViewController(loginVC, animated: true)
-//    }
-//    
-//    @IBAction func joinButtonPressed(_ sender: UIButton) {
-//        print("Join Button Pressed")
-//        let joinVC = self.storyboard?.instantiateViewController(identifier: "Join") as! JoinViewController
-//        self.navigationController?.pushViewController(joinVC, animated: true)
-//    }
     
 }
 

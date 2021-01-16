@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareOTF_acB.otf">
+            <string>NanumSquareOTF_acB</string>
+        </array>
+        <array key="NanumSquareOTF_acR.otf">
+            <string>NanumSquareOTF_acR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="222" id="KGk-i7-Jjw" customClass="ContentCell" customModule="TripDiary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZAV-e1-ams">
+                        <rect key="frame" x="18" y="10" width="367" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N9s-p4-5kb">
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-dI-HIn" userLabel="Name">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="uml-Fa-DaL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumSquareOTF_acB" family="NanumSquareOTF_ac" pointSize="24"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.30980392156862746" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-2c-I3s" userLabel="Date">
+                                        <rect key="frame" x="80" y="0.0" width="34" height="32"/>
+                                        <fontDescription key="fontDescription" name="NanumSquareOTF_acR" family="NanumSquareOTF_ac" pointSize="14"/>
+                                        <color key="textColor" red="0.27058823529999998" green="0.30980392159999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-XU-2gO" userLabel="Bottom Image View">
+                                <rect key="frame" x="0.0" y="40" width="367" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="32W-Ae-XRH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="nHp-oa-ciT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZAV-e1-ams" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2vv-cK-Wz3"/>
+                    <constraint firstAttribute="trailing" secondItem="ZAV-e1-ams" secondAttribute="trailing" constant="18" id="kwx-92-218"/>
+                    <constraint firstItem="ZAV-e1-ams" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="rGp-3t-d5K"/>
+                    <constraint firstAttribute="bottom" secondItem="ZAV-e1-ams" secondAttribute="bottom" constant="10" id="ui9-uI-USf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomImageView" destination="bsY-XU-2gO" id="HYZ-0W-nIQ"/>
+                <outlet property="date" destination="uEI-2c-I3s" id="HS4-Nd-9sJ"/>
+                <outlet property="name" destination="gcb-dI-HIn" id="Dq5-id-2ha"/>
+            </connections>
+            <point key="canvasLocation" x="107.97101449275362" y="162.72321428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
