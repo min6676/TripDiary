@@ -59,6 +59,7 @@
                         </constraints>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="ZAV-e1-ams" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2vv-cK-Wz3"/>
                     <constraint firstAttribute="trailing" secondItem="ZAV-e1-ams" secondAttribute="trailing" constant="18" id="kwx-92-218"/>
