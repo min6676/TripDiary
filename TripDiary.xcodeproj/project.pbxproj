@@ -16,9 +16,9 @@
 		6D35587125B3477000DB13E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35587025B3477000DB13E0 /* Constants.swift */; };
 		6D35587425B3700200DB13E0 /* DetailTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35587325B3700200DB13E0 /* DetailTourViewController.swift */; };
 		6D51E15C25AC7B06004CFFE1 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51E15B25AC7B05004CFFE1 /* FindPWViewController.swift */; };
-		6D96999D25B7233B00D0B4BB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D96999C25B7233B00D0B4BB /* RegisterModel.swift */; };
 		6D9699A225B723D500D0B4BB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699A125B723D500D0B4BB /* APIManager.swift */; };
 		6D9699AD25B744D700D0B4BB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699AC25B744D700D0B4BB /* LoginModel.swift */; };
+		6D9699BF25B76E9F00D0B4BB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699BE25B76E9F00D0B4BB /* RegisterModel.swift */; };
 		6DB829C825A8D17A007F7BA1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */; };
 		6DE8404625AAF3A600AE930F /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */; };
 		6DE8404725AAF3A600AE930F /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */; };
@@ -43,9 +43,9 @@
 		6D35587025B3477000DB13E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6D35587325B3700200DB13E0 /* DetailTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTourViewController.swift; sourceTree = "<group>"; };
 		6D51E15B25AC7B05004CFFE1 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
-		6D96999C25B7233B00D0B4BB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		6D9699A125B723D500D0B4BB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		6D9699AC25B744D700D0B4BB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		6D9699BE25B76E9F00D0B4BB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				6D35586125B33A7C00DB13E0 /* Content.swift */,
-				6D96999C25B7233B00D0B4BB /* RegisterModel.swift */,
+				6D9699BE25B76E9F00D0B4BB /* RegisterModel.swift */,
 				6D9699AC25B744D700D0B4BB /* LoginModel.swift */,
 			);
 			path = Models;
@@ -304,7 +304,7 @@
 				6D35587125B3477000DB13E0 /* Constants.swift in Sources */,
 				6DFEC39F25A82EC5002D8194 /* AppDelegate.swift in Sources */,
 				6DB829C825A8D17A007F7BA1 /* RegisterViewController.swift in Sources */,
-				6D96999D25B7233B00D0B4BB /* RegisterModel.swift in Sources */,
+				6D9699BF25B76E9F00D0B4BB /* RegisterModel.swift in Sources */,
 				6DFEC3A125A82EC5002D8194 /* SceneDelegate.swift in Sources */,
 				6D35587425B3700200DB13E0 /* DetailTourViewController.swift in Sources */,
 				6D35586625B33D2D00DB13E0 /* ContentCell.swift in Sources */,
