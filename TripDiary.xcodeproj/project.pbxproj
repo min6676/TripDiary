@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA8CB150DBC895FBE09B678 /* Pods_TripDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849AAD85F50480848A15F662 /* Pods_TripDiary.framework */; };
 		6D35584725B325C900DB13E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D35584625B325C900DB13E0 /* GoogleService-Info.plist */; };
-		6D35586225B33A7C00DB13E0 /* content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35586125B33A7C00DB13E0 /* content.swift */; };
+		6D35586225B33A7C00DB13E0 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35586125B33A7C00DB13E0 /* Content.swift */; };
 		6D35586625B33D2D00DB13E0 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35586425B33D2D00DB13E0 /* ContentCell.swift */; };
 		6D35586725B33D2D00DB13E0 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D35586525B33D2D00DB13E0 /* ContentCell.xib */; };
 		6D35586E25B3426E00DB13E0 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35586D25B3426E00DB13E0 /* ContentViewController.swift */; };
 		6D35587125B3477000DB13E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35587025B3477000DB13E0 /* Constants.swift */; };
 		6D35587425B3700200DB13E0 /* DetailTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35587325B3700200DB13E0 /* DetailTourViewController.swift */; };
 		6D51E15C25AC7B06004CFFE1 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51E15B25AC7B05004CFFE1 /* FindPWViewController.swift */; };
-		6DB829C825A8D17A007F7BA1 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB829C725A8D17A007F7BA1 /* JoinViewController.swift */; };
+		6D96999D25B7233B00D0B4BB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D96999C25B7233B00D0B4BB /* RegisterModel.swift */; };
+		6D9699A225B723D500D0B4BB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699A125B723D500D0B4BB /* APIManager.swift */; };
+		6D9699AD25B744D700D0B4BB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699AC25B744D700D0B4BB /* LoginModel.swift */; };
+		6DB829C825A8D17A007F7BA1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */; };
 		6DE8404625AAF3A600AE930F /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */; };
 		6DE8404725AAF3A600AE930F /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */; };
 		6DE8404825AAF3A600AE930F /* NanumSquareOTF_acL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404425AAF3A500AE930F /* NanumSquareOTF_acL.otf */; };
@@ -32,14 +36,17 @@
 /* Begin PBXFileReference section */
 		6090B4ABC1EA3474821E18DD /* Pods-TripDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary.debug.xcconfig"; path = "Target Support Files/Pods-TripDiary/Pods-TripDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		6D35584625B325C900DB13E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6D35586125B33A7C00DB13E0 /* content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = content.swift; sourceTree = "<group>"; };
+		6D35586125B33A7C00DB13E0 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		6D35586425B33D2D00DB13E0 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		6D35586525B33D2D00DB13E0 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		6D35586D25B3426E00DB13E0 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		6D35587025B3477000DB13E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6D35587325B3700200DB13E0 /* DetailTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTourViewController.swift; sourceTree = "<group>"; };
 		6D51E15B25AC7B05004CFFE1 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
-		6DB829C725A8D17A007F7BA1 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		6D96999C25B7233B00D0B4BB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		6D9699A125B723D500D0B4BB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6D9699AC25B744D700D0B4BB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
 		6DE8404425AAF3A500AE930F /* NanumSquareOTF_acL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acL.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acL.otf; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 		6DFEC3AA25A82EC6002D8194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DFEC3AC25A82EC6002D8194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DFEC3B925A8595B002D8194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		849AAD85F50480848A15F662 /* Pods_TripDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4926338650F78D8D9BEC70B /* Pods-TripDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiary.release.xcconfig"; path = "Target Support Files/Pods-TripDiary/Pods-TripDiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,18 +69,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA8CB150DBC895FBE09B678 /* Pods_TripDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C353ACCCDA72708E7633A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849AAD85F50480848A15F662 /* Pods_TripDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D9699A025B7237F00D0B4BB /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				6D9699A125B723D500D0B4BB /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		6DFEC39225A82EC5002D8194 = {
 			isa = PBXGroup;
 			children = (
 				6DFEC39D25A82EC5002D8194 /* TripDiary */,
 				6DFEC39C25A82EC5002D8194 /* Products */,
 				8ED61665A107725A5BD14D99 /* Pods */,
+				4C353ACCCDA72708E7633A60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,15 +113,16 @@
 		6DFEC39D25A82EC5002D8194 /* TripDiary */ = {
 			isa = PBXGroup;
 			children = (
+				6D9699A025B7237F00D0B4BB /* APIManager */,
+				6DFEC3B725A8555C002D8194 /* Models */,
+				6DFEC3B525A8553E002D8194 /* Controllers */,
+				6DFEC3B625A85552002D8194 /* Views */,
 				6DFEC39E25A82EC5002D8194 /* AppDelegate.swift */,
 				6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */,
 				6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */,
 				6DE8404425AAF3A500AE930F /* NanumSquareOTF_acL.otf */,
 				6DE8404525AAF3A500AE930F /* NanumSquareOTF_acR.otf */,
 				6DFEC3A025A82EC5002D8194 /* SceneDelegate.swift */,
-				6DFEC3B725A8555C002D8194 /* Models */,
-				6DFEC3B525A8553E002D8194 /* Controllers */,
-				6DFEC3B625A85552002D8194 /* Views */,
 				6DFEC3A725A82EC6002D8194 /* Assets.xcassets */,
 				6D35584625B325C900DB13E0 /* GoogleService-Info.plist */,
 				6DFEC3A925A82EC6002D8194 /* LaunchScreen.storyboard */,
@@ -110,7 +137,7 @@
 			children = (
 				6DFEC3A225A82EC5002D8194 /* MainViewController.swift */,
 				6DFEC3B925A8595B002D8194 /* LoginViewController.swift */,
-				6DB829C725A8D17A007F7BA1 /* JoinViewController.swift */,
+				6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */,
 				6D51E15B25AC7B05004CFFE1 /* FindPWViewController.swift */,
 				6D35586D25B3426E00DB13E0 /* ContentViewController.swift */,
 				6D35587325B3700200DB13E0 /* DetailTourViewController.swift */,
@@ -131,7 +158,9 @@
 		6DFEC3B725A8555C002D8194 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6D35586125B33A7C00DB13E0 /* content.swift */,
+				6D35586125B33A7C00DB13E0 /* Content.swift */,
+				6D96999C25B7233B00D0B4BB /* RegisterModel.swift */,
+				6D9699AC25B744D700D0B4BB /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +185,7 @@
 				6DFEC39725A82EC5002D8194 /* Sources */,
 				6DFEC39825A82EC5002D8194 /* Frameworks */,
 				6DFEC39925A82EC5002D8194 /* Resources */,
+				6D1C8DF737A688476B02A451 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +270,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D1C8DF737A688476B02A451 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripDiary/Pods-TripDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,13 +295,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D51E15C25AC7B06004CFFE1 /* FindPWViewController.swift in Sources */,
-				6D35586225B33A7C00DB13E0 /* content.swift in Sources */,
+				6D9699AD25B744D700D0B4BB /* LoginModel.swift in Sources */,
+				6D35586225B33A7C00DB13E0 /* Content.swift in Sources */,
+				6D9699A225B723D500D0B4BB /* APIManager.swift in Sources */,
 				6DFEC3BA25A8595B002D8194 /* LoginViewController.swift in Sources */,
 				6DFEC3A325A82EC5002D8194 /* MainViewController.swift in Sources */,
 				6D35586E25B3426E00DB13E0 /* ContentViewController.swift in Sources */,
 				6D35587125B3477000DB13E0 /* Constants.swift in Sources */,
 				6DFEC39F25A82EC5002D8194 /* AppDelegate.swift in Sources */,
-				6DB829C825A8D17A007F7BA1 /* JoinViewController.swift in Sources */,
+				6DB829C825A8D17A007F7BA1 /* RegisterViewController.swift in Sources */,
+				6D96999D25B7233B00D0B4BB /* RegisterModel.swift in Sources */,
 				6DFEC3A125A82EC5002D8194 /* SceneDelegate.swift in Sources */,
 				6D35587425B3700200DB13E0 /* DetailTourViewController.swift in Sources */,
 				6D35586625B33D2D00DB13E0 /* ContentCell.swift in Sources */,

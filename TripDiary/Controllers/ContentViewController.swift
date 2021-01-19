@@ -12,6 +12,10 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     var contents: [Content] = [
         Content(name: "홍천", date: "7/9 - AM 10:00", image: #imageLiteral(resourceName: "홍천")),
         Content(name: "남이섬", date: "7/10 - PM 02:00", image: #imageLiteral(resourceName: "nami_island")),

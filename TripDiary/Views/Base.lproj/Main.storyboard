@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1069.2307692307693" y="138.6255924170616"/>
         </scene>
-        <!--Join View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="WEM-Jv-rTj">
             <objects>
-                <viewController storyboardIdentifier="Join" id="A94-8n-nFE" customClass="JoinViewController" customModule="TripDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Join" id="A94-8n-nFE" customClass="RegisterViewController" customModule="TripDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h8K-Nd-FPT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,11 +234,12 @@
                         <outlet property="passwordConfirmTextField" destination="NJU-Y6-lsv" id="BeI-f9-nMx"/>
                         <outlet property="passwordTextField" destination="Ebp-od-jM2" id="NSw-gQ-nNG"/>
                         <outlet property="userIdTextField" destination="KpP-gv-VcF" id="8Rb-aP-w94"/>
+                        <segue destination="O3z-82-S0X" kind="show" identifier="RegisterToContent" id="F1B-Nv-kIs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lf8-fz-yQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1069" y="862"/>
+            <point key="canvasLocation" x="2075" y="525"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="a7T-5U-x6P">
@@ -336,6 +337,26 @@
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUd-Fd-jfV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="올바른 아이디를 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8j-Yx-agp" userLabel="WrongIdLabel">
+                                <rect key="frame" x="30" y="323" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="P4i-Am-912"/>
+                                    <constraint firstAttribute="height" constant="25" id="gz8-0M-BvY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumSquareOTF_acL" family="NanumSquareOTF_ac" pointSize="10"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.035294117649999998" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="올바른 비밀번호를 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNP-Gb-AR2" userLabel="WrongPasswordLabel">
+                                <rect key="frame" x="30" y="393" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="2FS-DC-svC"/>
+                                    <constraint firstAttribute="height" constant="25" id="wKD-wF-72A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumSquareOTF_acL" family="NanumSquareOTF_ac" pointSize="10"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.035294117649999998" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pMP-lY-FcJ"/>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.71372549019999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -343,10 +364,16 @@
                         <constraints>
                             <constraint firstItem="IM1-Fa-0z9" firstAttribute="leading" secondItem="pMP-lY-FcJ" secondAttribute="leading" constant="30" id="0Og-Ke-qL3"/>
                             <constraint firstItem="pMP-lY-FcJ" firstAttribute="trailing" secondItem="eLm-4Z-DvG" secondAttribute="trailing" constant="30" id="5MT-61-Dbc"/>
+                            <constraint firstItem="aNP-Gb-AR2" firstAttribute="top" secondItem="nfX-ak-VPU" secondAttribute="bottom" constant="5" id="EBw-Wt-4V6"/>
                             <constraint firstItem="eLm-4Z-DvG" firstAttribute="top" secondItem="pMP-lY-FcJ" secondAttribute="top" constant="390" id="EeI-3X-Lkx"/>
+                            <constraint firstItem="c8j-Yx-agp" firstAttribute="top" secondItem="SRr-JO-3Dh" secondAttribute="bottom" constant="5" id="I6D-zx-ITK"/>
                             <constraint firstItem="eLm-4Z-DvG" firstAttribute="leading" secondItem="pMP-lY-FcJ" secondAttribute="leading" constant="30" id="IFD-Gx-xSW"/>
+                            <constraint firstItem="pMP-lY-FcJ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="c8j-Yx-agp" secondAttribute="trailing" constant="240" id="Yrx-yu-lsQ"/>
                             <constraint firstItem="IM1-Fa-0z9" firstAttribute="top" secondItem="pMP-lY-FcJ" secondAttribute="top" constant="190" id="aT5-la-Vfp"/>
+                            <constraint firstItem="aNP-Gb-AR2" firstAttribute="leading" secondItem="pMP-lY-FcJ" secondAttribute="leading" constant="30" id="dk7-b8-LJH"/>
+                            <constraint firstItem="c8j-Yx-agp" firstAttribute="leading" secondItem="pMP-lY-FcJ" secondAttribute="leading" constant="30" id="j95-TN-ybI"/>
                             <constraint firstItem="pMP-lY-FcJ" firstAttribute="trailing" secondItem="IM1-Fa-0z9" secondAttribute="trailing" constant="30" id="so8-b1-aAA"/>
+                            <constraint firstItem="pMP-lY-FcJ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aNP-Gb-AR2" secondAttribute="trailing" constant="240" id="uNw-Ok-Oe4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3XA-LE-v6L"/>
@@ -354,12 +381,14 @@
                         <outlet property="goButton" destination="eLm-4Z-DvG" id="bxD-Zp-oJH"/>
                         <outlet property="passwordTextField" destination="nfX-ak-VPU" id="jNi-UM-3qV"/>
                         <outlet property="userIdTextField" destination="SRr-JO-3Dh" id="UEY-gB-qsX"/>
+                        <outlet property="wrongIdLabel" destination="c8j-Yx-agp" id="BkY-LF-qr2"/>
+                        <outlet property="wrongPasswordLabel" destination="aNP-Gb-AR2" id="WGt-OV-bmI"/>
                         <segue destination="O3z-82-S0X" kind="show" identifier="LoginToContent" id="dBX-Ef-jfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqq-yW-2ZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="139"/>
+            <point key="canvasLocation" x="2075" y="-238"/>
         </scene>
         <!--Home-->
         <scene sceneID="lAe-UW-ugU">
@@ -442,7 +471,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvX-wc-rkb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvX-wc-rkb" userLabel="FindPassword">
                                 <rect key="frame" x="30" y="478" width="330" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -454,9 +483,20 @@
                                     <color key="titleColor" red="0.32156862749999998" green="0.71372549019999998" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="findPasswordPressed:" destination="MFT-jn-t8B" eventType="touchUpInside" id="TVB-kh-x34"/>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Umw-c5-LDz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디를 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHk-rJ-BU3" userLabel="EmptyIdLabel">
+                                <rect key="frame" x="30" y="323" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="FsD-JX-Klp"/>
+                                    <constraint firstAttribute="height" constant="25" id="zvp-PP-wZw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumSquareOTF_acL" family="NanumSquareOTF_ac" pointSize="10"/>
+                                <color key="textColor" red="0.97647058823529409" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O8z-QH-rWz"/>
                         <color key="backgroundColor" red="0.38019317390000001" green="0.75297921899999998" blue="0.48620855810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -464,19 +504,24 @@
                             <constraint firstItem="Ey1-kO-caS" firstAttribute="leading" secondItem="O8z-QH-rWz" secondAttribute="leading" constant="30" id="2yF-Wi-oLk"/>
                             <constraint firstItem="O8z-QH-rWz" firstAttribute="trailing" secondItem="Ey1-kO-caS" secondAttribute="trailing" constant="30" id="8a5-w3-jHl"/>
                             <constraint firstItem="jvX-wc-rkb" firstAttribute="leading" secondItem="O8z-QH-rWz" secondAttribute="leading" constant="30" id="8sb-6P-6kI"/>
+                            <constraint firstItem="eHk-rJ-BU3" firstAttribute="top" secondItem="Ey1-kO-caS" secondAttribute="bottom" constant="5" id="GvW-Wf-Xh3"/>
+                            <constraint firstItem="eHk-rJ-BU3" firstAttribute="leading" secondItem="O8z-QH-rWz" secondAttribute="leading" constant="30" id="H8U-zY-0df"/>
                             <constraint firstItem="O8z-QH-rWz" firstAttribute="trailing" secondItem="jvX-wc-rkb" secondAttribute="trailing" constant="30" id="M7J-oD-8nT"/>
                             <constraint firstItem="Ey1-kO-caS" firstAttribute="top" secondItem="O8z-QH-rWz" secondAttribute="top" constant="190" id="cyk-sD-Zyn"/>
                             <constraint firstItem="jvX-wc-rkb" firstAttribute="top" secondItem="O8z-QH-rWz" secondAttribute="top" constant="390" id="fkw-yF-Bpm"/>
+                            <constraint firstItem="O8z-QH-rWz" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eHk-rJ-BU3" secondAttribute="trailing" constant="240" id="hy0-Ye-atU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vCm-gd-vOz"/>
                     <connections>
+                        <outlet property="emptyIdLabel" destination="eHk-rJ-BU3" id="gk3-Pm-qku"/>
                         <outlet property="goButton" destination="jvX-wc-rkb" id="G8J-XV-o3P"/>
+                        <outlet property="userIdTextField" destination="Ey1-kO-caS" id="LUH-L7-BjS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCH-no-mV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="863"/>
+            <point key="canvasLocation" x="3471" y="-612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cko-yX-eBK">
@@ -646,6 +691,9 @@
             <point key="canvasLocation" x="6011" y="862"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dBX-Ef-jfq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>

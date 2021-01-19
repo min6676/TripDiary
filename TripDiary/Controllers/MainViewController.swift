@@ -39,6 +39,6 @@ class MainViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-    
+
 }
 
