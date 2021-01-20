@@ -19,6 +19,8 @@
 		6D9699A225B723D500D0B4BB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699A125B723D500D0B4BB /* APIManager.swift */; };
 		6D9699AD25B744D700D0B4BB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699AC25B744D700D0B4BB /* LoginModel.swift */; };
 		6D9699BF25B76E9F00D0B4BB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699BE25B76E9F00D0B4BB /* RegisterModel.swift */; };
+		6D9699C425B8217B00D0B4BB /* DetailContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9699C225B8217B00D0B4BB /* DetailContentCell.swift */; };
+		6D9699C525B8217B00D0B4BB /* DetailContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9699C325B8217B00D0B4BB /* DetailContentCell.xib */; };
 		6DB829C825A8D17A007F7BA1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */; };
 		6DE8404625AAF3A600AE930F /* NanumSquareOTF_acB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */; };
 		6DE8404725AAF3A600AE930F /* NanumSquareOTF_acEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */; };
@@ -46,6 +48,8 @@
 		6D9699A125B723D500D0B4BB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		6D9699AC25B744D700D0B4BB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		6D9699BE25B76E9F00D0B4BB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		6D9699C225B8217B00D0B4BB /* DetailContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentCell.swift; sourceTree = "<group>"; };
+		6D9699C325B8217B00D0B4BB /* DetailContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailContentCell.xib; sourceTree = "<group>"; };
 		6DB829C725A8D17A007F7BA1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6DE8404225AAF3A500AE930F /* NanumSquareOTF_acB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acB.otf; sourceTree = "<group>"; };
 		6DE8404325AAF3A500AE930F /* NanumSquareOTF_acEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareOTF_acEB.otf; path = ../../../Downloads/Nanumsquare_ac_OTF/NanumSquareOTF_acEB.otf; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				6DFEC3A425A82EC5002D8194 /* Main.storyboard */,
 				6D35586425B33D2D00DB13E0 /* ContentCell.swift */,
 				6D35586525B33D2D00DB13E0 /* ContentCell.xib */,
+				6D9699C225B8217B00D0B4BB /* DetailContentCell.swift */,
+				6D9699C325B8217B00D0B4BB /* DetailContentCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				6DE8404825AAF3A600AE930F /* NanumSquareOTF_acL.otf in Resources */,
 				6DFEC3A625A82EC5002D8194 /* Main.storyboard in Resources */,
 				6DE8404625AAF3A600AE930F /* NanumSquareOTF_acB.otf in Resources */,
+				6D9699C525B8217B00D0B4BB /* DetailContentCell.xib in Resources */,
 				6D35586725B33D2D00DB13E0 /* ContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 			files = (
 				6D51E15C25AC7B06004CFFE1 /* FindPWViewController.swift in Sources */,
 				6D9699AD25B744D700D0B4BB /* LoginModel.swift in Sources */,
+				6D9699C425B8217B00D0B4BB /* DetailContentCell.swift in Sources */,
 				6D35586225B33A7C00DB13E0 /* Content.swift in Sources */,
 				6D9699A225B723D500D0B4BB /* APIManager.swift in Sources */,
 				6DFEC3BA25A8595B002D8194 /* LoginViewController.swift in Sources */,

@@ -6,8 +6,10 @@
 //
 
 struct K {
-    static let cellIdentifier = "ReusableCell"
+    static let cellIdentifier = "contentCell"
     static let cellNibName = "ContentCell"
+    static let detailCellIdentifier = "detailContentCell"
+    static let detialCellNibName = "DetailContentCell"
     static let loginSegue = "LoginToContent"
     static let registerSegue = "RegisterToContent"
     static let app_id = "B037284F-6ACC-088A-FF95-9A6C4076DE00"
